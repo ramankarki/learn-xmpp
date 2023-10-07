@@ -1,0 +1,19 @@
+{
+  "name": "browser-socket-chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --ignore ./public/scripts/primus.js index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "primus": "2",
+    "primus-emitter": "^3.1.1",
+    "ws": "0.8.0",
+    "xmpp-ftw": "^2.0.0"
+  }
+}

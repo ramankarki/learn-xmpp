@@ -1,0 +1,13 @@
+{
+  "name": "xmpp-component",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "@types/xmpp__component": "^0.13.0",
+    "@xmpp/component": "^0.13.1"
+  }
+}

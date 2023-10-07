@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="text/javascript" src="./scripts/primus.js"></script>
+    <script type="text/javascript">
+      const socket = new Primus()
+      socket.on('open', function () {
+        console.log('Websocket connection achieved!')
+      })
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="login">
+      <label for="jid">JID</label
+      ><input type="text" name="jid" placeholder="jid" />
+      <label for="password">Password</label
+      ><input type="password" name="password" />
+      <p class="connection-status">Offline</p>
+      <button type="button" name="login">Login</button>
+    </div>
+
+    <div class="send">
+      <label for="outgoing-message">Message</label>
+      <textarea name="outgoing-message"></textarea>
+      <button type="button" name="send-message">Send Message</button>
+    </div>
+
+    <div class="received"></div>
+
+    <script src="./scripts/xmpp.js"></script>
+  </body>
+</html>
